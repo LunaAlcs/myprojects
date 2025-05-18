@@ -1,93 +1,92 @@
 :root {
   --bg-dark: #1c1c1c;
   --purple: #a259ff;
-  --light-gray: #dcdcdc;
-  --white: #fff;
+  --gray: #dcdcdc;
+  --white: #ffffff;
 }
 
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background: var(--bg-dark);
-  color: var(--light-gray);
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--gray);
 }
 
-header {
-  background: #111;
-  padding: 30px 20px;
-  text-align: center;
-}
-
-.profile {
+header.profile {
+  background-color: #111;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .profile-img {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 15px;
   border: 3px solid var(--purple);
+  margin-bottom: 15px;
 }
 
 .profile-info h1 {
+  margin: 0;
   color: var(--purple);
-  margin-bottom: 5px;
 }
 
-main {
+.container {
   max-width: 1000px;
   margin: 40px auto;
   padding: 20px;
 }
 
 .project {
-  background: #2a2a2a;
-  padding: 25px;
+  background-color: #2a2a2a;
+  padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
 }
 
 .project h2 {
-  margin-top: 0;
   color: var(--purple);
+  margin-top: 0;
+}
+
+.description {
+  margin-bottom: 20px;
 }
 
 .project-gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 15px;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .project-gallery img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  object-fit: cover;
+  border-radius: 10px;
   border: 2px solid #444;
 }
 
 .project-links {
-  margin-top: 25px;
   text-align: center;
+  margin-top: 25px;
 }
 
 .project-links a {
   display: inline-block;
   margin: 10px;
-  text-decoration: none;
-  background: var(--purple);
-  color: var(--white);
   padding: 12px 20px;
+  background-color: var(--purple);
+  color: var(--white);
+  text-decoration: none;
   border-radius: 6px;
-  transition: background 0.3s ease;
+  transition: 0.3s;
 }
 
 .project-links a:hover {
-  background: #822fff;
+  background-color: #822fff;
 }
